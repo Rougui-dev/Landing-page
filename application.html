@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* margin: 0; */
+            /* padding: 0; */
+        }
+        body{
+            width: 100%;
+            height: auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: linear-gradient(to top right, rgba(19, 36, 216, 0.8) 3%, cyan 97%);
+
+        }
+        header{
+            /* background-color: rgb(54, 138, 240); */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            justify-items: right;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+        }
+        .main{
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            /* justify-content: space-evenly; */
+            align-items: center;
+            gap: 30px;
+        }
+        .main h2{
+            font-size: 50px;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        header h1{
+            
+            
+            color: white;
+        }
+        .main p{
+            font-size: 20px;
+        }
+       .left button{
+            background-color: rgb(8, 207, 81);
+            color: white;
+            width: 150px;
+            height: 30px;
+            border-radius: 20px;
+            border: none;
+            margin-right: auto;
+        }
+        .corps{
+            /* background-color: white; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+            padding: 0 10%;
+            
+
+            
+
+        }
+        form h1{
+            color: black;
+            font-weight: lighter;
+            font-size: 1.3rem;
+        }
+        form button{
+            color: white;
+            background-color: rgb(71, 88, 214);
+            border-radius: 20px;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            
+        }
+        .left{
+            width:50% ;
+            height: 100%;
+            padding: 0 10%;
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid blueviolet; */
+        }
+        .left p{
+            color: white;
+        }
+        form{
+            background-color: white;
+            display: flex;
+            justify-content:space-evenly ;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            height:70%;
+            padding: 20px;
+            /* border: 2px solid red; */
+            box-shadow: 0 0 15px  rgb(0, 0, 0,0.5);
+            border-radius: 2px;
+        }
+        .main a{
+         text-decoration: none;
+         color: rgb(209, 205, 205);
+
+        }
+        .btn{
+            border: 1px solid white;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+        form input, select{
+            width: 100%;
+            height: 30px;
+            padding: 5px;
+            border: none;
+            /* border: 2px solid red; */
+            background-color: rgba(240, 240, 239, 1);
+            outline: none;
+        }
+        
+@media screen and (max-width:768px) {
+    .main{
+        flex-direction: column;
+        height: auto;
+    }
+    .left,.corps{
+        width: 100%;
+        height: auto;
+    }
+    form{
+        height: auto;
+        /* border: 2px solid red; */
+    }
+}
+        
+
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Landing</h1>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Reviews</a>
+            <a href="#">Pricing</a>
+            <a href="#">FAQ</a>
+            <a class="btn" href="#">Get Started</a>
+
+        </nav>
+    </header>
+    <section class="main">
+        <section class="left">
+        <h2>Fly makes you<br>faster</h2>
+        <p>New free template by <a href="uicookies.com">uicookies.com</a>.
+            For more <br>templates visit the <a href="Site">Site</a>.Lorem ipsum dolor sit amet,<br>
+            consectur adipisicing elit.
+        </p>
+        <button>SEE PRICING</button>
+        </section>
+        <section class="corps">
+            <form action="">
+                <h1>Sign Up for Free</h1>
+                <input type="text" placeholder="Full name">
+                 <input type="Email" placeholder="Email">
+                 <input type="Address" placeholder="Address">
+                <select name="Type" id="Type">
+                    <option value="Type">Type</option>
+                    <option value="Cookie">Cookie</option>
+                    <option value="Cake">Cake</option>
+                </select>
+                <button>Register</button>
+
+            </form>
+        </section>
+</section>
+</body>
+</html>
